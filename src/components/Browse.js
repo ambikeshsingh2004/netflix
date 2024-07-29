@@ -3,13 +3,20 @@ import Header from './Header';
 import Maincon from "./Maincon"
 import Secon   from "./Secon"
 import useNowplaying from '../hooks/usenowplaying';
+import Gptsearch from './Gptsearch';
+import { useSelector } from 'react-redux';
 const Browse = () => {
+  // we only want to show gpt search when clicked on that button else hidden
  useNowplaying();
+ const showgptsearch = useSelector(store=>store.gpt.showgptsearch);
   return (
     <div className='bg-black'>
       <Header/>
+    {showgptsearch? <Gptsearch/>:<><Maincon/>
+      <Secon /></>}
+      {/* <Gptsearch/>
       <Maincon/>
-      <Secon />
+      <Secon /> */}
     </div>
   )
 }
