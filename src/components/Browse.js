@@ -6,7 +6,7 @@ import useNowplaying from '../hooks/usenowplaying';
 const Browse = () => {
  useNowplaying();
   return (
-    <div>
+    <div className='bg-black'>
       <Header/>
       <Maincon/>
       <Secon />
