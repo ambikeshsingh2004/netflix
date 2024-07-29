@@ -37,7 +37,7 @@ if(msg )return;
       dispatch(adduser({uid:uid,email:email,displayName:displayName,
         photoURL:photoURL,  
       }));
-      navigate("/browse");
+     // navigate("/browse");
       // ...
     }).catch((error) => {
       // An error occurred
@@ -63,7 +63,7 @@ if(msg )return;
     const user = userCredential.user;
     // ...
     console.log(user);
-    navigate("/browse");
+   // navigate("/browse");
   })
   .catch((error) => {
     const errorCode = error.code;
