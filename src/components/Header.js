@@ -61,7 +61,7 @@ signOut(auth).then(() => {
      }
   },[])
   return (
-    <div className = " w-screen absolute bg-gradient-to-b from-black bg-gradient-to-r from-black z-10 flex flex-col md:flex-row justify-between sm:bg-green-600 bg-black">
+    <div className = " w-screen absolute bg-gradient-to-b from-black bg-gradient-to-r from-black z-10 flex justify-between">
    <img src = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt = "logo" className = "w-48" />
    {user && 
    <div className ="flex p-2">
