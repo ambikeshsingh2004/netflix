@@ -2,11 +2,14 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+import { buildCreateSlice } from "@reduxjs/toolkit";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// in your firebase go to overview then authentication and then enbale type of authentication you want 
+
 const firebaseConfig = {
   apiKey: "AIzaSyAO7lLQCbVdC2XDF46UB6rTkRwBX7zLLZw",
   authDomain: "project1-48386.firebaseapp.com",

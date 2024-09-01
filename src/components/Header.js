@@ -39,9 +39,12 @@ signOut(auth).then(() => {
    const unsubscribe = onAuthStateChanged(auth,(user)=>{
       if(user){
         // for sign up,signin
+        // it will be called for signin ,signup,signout each time
+        // if signed in user will have some value else it will be null 
         const{uid,email,displayName,photoURL} =user;
         dispatch(adduser({uid:uid,email:email,displayName:displayName,
           photoURL:photoURL,  
+          // same thing is being done by login .js
         }));
         // if user is logged in redirect to 
         // browse page 

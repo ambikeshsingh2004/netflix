@@ -11,6 +11,8 @@ const Videob = ({mid}) => {
   useTrailer(mid);
 
   
+//aspect video us container ko 16/9 kr deta h 
+// w-screen us component ko poore screen me kr deta h 
 
   return (
     <div className ="w-screen ">
